@@ -2,7 +2,7 @@ package de.zettsystems.application;
 
 import org.springframework.beans.factory.annotation.Autowired;
 
-public class ZettService {
+public abstract class ZettService {
     private final String name;
     private TheOtherService theOtherService;
 

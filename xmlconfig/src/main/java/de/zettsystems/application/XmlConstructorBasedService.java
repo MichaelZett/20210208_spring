@@ -3,6 +3,7 @@ package de.zettsystems.application;
 import de.zettsystems.domain.DataRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.InitializingBean;
 
 public class XmlConstructorBasedService {
 	private static final Logger LOG = LoggerFactory.getLogger(XmlConstructorBasedService.class);
@@ -14,8 +15,8 @@ public class XmlConstructorBasedService {
 	}
 
 	public void setup() {
-		dataRepository.putData("key", "Constructor");
-		LOG.info(dataRepository.getDataByKey("key").get());
+		dataRepository.putData("con", "Constructor");
+		LOG.info(dataRepository.getDataByKey("con").get());
 	}
 
 }

@@ -18,8 +18,8 @@ public class XmlPropertyBasedService {
 	}
 
 	public void setup() {
-		dataRepository.putData("key", "Property");
-		LOG.info(dataRepository.getDataByKey("key").get());
+		dataRepository.putData("prop", "Property");
+		LOG.info(dataRepository.getDataByKey("prop").get());
 	}
 
 }
